@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#7d8b8e</color>
+    <color name="colorPrimaryDark">#484558</color>
+    <color name="colorAccent">#7a7673</color>
+    <color name="white">#FFFFFF</color>
+    <color name="background">#eae5e2</color>
+    <color name="coach_mark">#80000000</color>
+    <color name="espresso">#C9AF94</color>
+    <color name="dark_espresso">#a0815f</color>
+    <color name="darker_espresso">#7e5d3a</color>
+    <color name="orange">#ffe4b2</color>
+    <color name="yellow">#ffffb2</color>
+    <color name="green">#cce5cc</color>
+    <color name="blue">#ADEAEA</color>
+    <color name="red">#ffcccc</color>
+    <color name="purple">#ddd1e7</color>
+</resources>

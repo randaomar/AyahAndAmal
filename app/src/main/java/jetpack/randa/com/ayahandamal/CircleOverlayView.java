@@ -1,0 +1,79 @@
+package jetpack.randa.com.ayahandamal;
+
+import android.annotation.TargetApi;
+import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.*;
+import android.os.Build;
+import android.util.AttributeSet;
+import android.widget.LinearLayout;
+
+public class CircleOverlayView extends LinearLayout {
+    private Bitmap bitmap;
+
+    public CircleOverlayView(Context context) {
+        super(context);
+    }
+
+    public CircleOverlayView(Context context, AttributeSet attrs) {
+        super(context, attrs);
+    }
+
+    public CircleOverlayView(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+    }
+
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    public CircleOverlayView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+        super(context, attrs, defStyleAttr, defStyleRes);
+    }
+
+    @Override
+    protected void dispatchDraw(Canvas canvas) {
+        super.dispatchDraw(canvas);
+
+        if (bitmap == null) {
+            createWindowFrame();
+        }
+        canvas.drawBitmap(bitmap, 0, 0, null);
+    }
+
+    protected void createWindowFrame() {
+        bitmap = Bitmap.createBitmap(getWidth(), getHeight(), Bitmap.Config.ARGB_8888);
+        Canvas osCanvas = new Canvas(bitmap);
+
+        RectF outerRectangle = new RectF(0, 0, getWidth(), getHeight());
+
+        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        paint.setColor(/*getResources().getColor(R.color.colorPrimary)*/Color.BLACK);
+        paint.setAlpha(130);
+        osCanvas.drawRect(outerRectangle, paint);
+
+        paint.setColor(Color.TRANSPARENT);
+        paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_OUT));
+        float centerX = dpToPx(45);
+        float centerY = getHeight()- dpToPx(45) ;
+        float radius = getResources().getDimensionPixelSize(R.dimen.radius);
+        osCanvas.drawCircle(centerX, centerY, radius, paint);
+    }
+    private int dpToPx(int dp)
+    {
+        return (int) (dp * Resources.getSystem().getDisplayMetrics().density);
+    }
+
+    private int pxToDp(int px)
+    {
+        return (int) (px / Resources.getSystem().getDisplayMetrics().density);
+    }
+
+    @Override
+    public boolean isInEditMode() {
+        return true;
+    }
+
+    @Override
+    protected void onLayout(boolean changed, int l, int t, int r, int b) {
+        super.onLayout(changed, l, t, r, b);
+        bitmap = null;
+    }
+}

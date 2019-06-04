@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:padding="16dp"
+              android:orientation="vertical"
+              android:background="@color/background"
+             tools:context=".fragment.SettingsFragment">
+
+<Switch
+        android:layout_margin="16dp"
+        android:id="@+id/tafseer_switch"
+        android:text="@string/show_tafseer"
+        android:switchPadding="24dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/tafseer_hint"
+            android:text="@string/tafseer_hint"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <Switch
+            android:layout_margin="16dp"
+            android:id="@+id/tafseer_color_switch"
+            android:text="@string/show_tafseer_color"
+            android:switchPadding="24dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/tafseer_color_hint"
+            android:text="@string/tafseer_color_hint"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">آيه وعمل</string>
+    <string name="read_quran">قرآة القرآن</string>
+    <string name="topics">من مواضيع القرآن</string>
+    <string name="settings">الاعدادات</string>
+    <string name="no_work">ليس لديك أعمال بعد</string>
+    <string name="enter_ayah_desc">ادخل آيه والعمل المرتبط بالآيه</string>
+    <string name="insert_aml">أدخل العمل</string>
+    <string name="enter_amal">أدخل</string>
+    <string name="remind_me">ذكرني</string>
+    <string name="choose_alarm">اختار وقت التنبيه</string>
+    <string name="channel_name">AyahAndAmalAppliction</string>
+    <string name="channel_description">AyahAndAmalApplication for reminding good deeds</string>
+    <string name="reminder">نذكرك بالعمل الصالح</string>
+    <string name="go_to_bookmarks">المرجعيات</string>
+    <string name="basmalah">بسم الله الرحمن الرحيم</string>
+    <string name="show_tafseer">عرض التفسير مع قرآة القرآن</string>
+    <string name="tafseer_hint">اذا رغبت في غلق خاصية عرض التفسير مع القرآة يمكنك عرض تفسير الآيه عند الضغط على رقم
+        الآيه
+    </string>
+    <string name="show_tafseer_color">عرض الآيات بخلفية الوان التفصيل الموضوعي</string>
+    <string name="tafseer_color_hint">كل لون من الوان التفصيل الموضوعي يدل على موضوع: \nاللون الأزرق: آيات الله تعالى ودلائل قدرته \n اللون الاخضر: شمائل النبي والمؤمنون وجزاؤهم ووصف الجنه \n اللون البني: آيات الاحكام \n اللون الاصفر: ايات القصص \n اللون بنفسجي: القران الكريم, ووصف الانسان و الرد على افتراءات المشركين وسنة الله في خلقه\n اللون البرتقالي: يوم القيامة والموت والقبر والحساب والحشر\n اللون الاحمر: جهنم واوصافها وعذاب المشركين</string>
+    <string name="add_to_booknarks">أضف الى المرجعيات</string>
+    <string name="add_deed">أضف عمل جديد</string>
+    <string name="show_tafseer_menu">عرض/إخفاء التفسير</string>
+    <string name="ayah">آيه</string>
+    <string name="bookmark_saved">تم حفظ الآيه في المرجعيات</string>
+    <string name="no_bookmark">لا يوجد لديك مرجعيات بعد</string>
+    <string name="bookmark">المرجعيات</string>
+    <string name="topics_view">عرض الآيات بالمواضيع</string>
+    <string name="coach_mark">كثير عند قرآة القرآن تجد آيات تحثك على الأعمال الصالحه, يمكنك الضغط على هذا الزر بالاسفل
+        لإضافة عمل صالح واضافة له تنبيه
+    </string>
+    <string name="ok">موافق</string>
+    <string name="show_hint">يمكنك الضغط على رقم الآيه لعرض التفسير او اضافة الآيه للمرجعيات او اضافة عمل للآيه</string>
+
+</resources>
